@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import API_URL from "../../assets/utils/config";
 
 export default function TabSignUp({ activeTab, displaySignIn }) {
   const [email, setEmail] = useState("");
@@ -11,7 +12,7 @@ export default function TabSignUp({ activeTab, displaySignIn }) {
     e.preventDefault();
     e.persist();
     if (password === password2) {
-      fetch("http://localhost:3001/subscribe", {
+      fetch(`${API_URL}/subscribe`, {
         method: "post",
         headers: {
           Accept: "application/json",

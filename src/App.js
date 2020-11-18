@@ -11,6 +11,7 @@ import Home from "./Components/Home/Home";
 import MyMessagesPerso from "./Components/MyMessages/MyMessagesPerso";
 import MyAccount from "./Components/MyAccount/MyAccount";
 import UserView from "./Components/UserView/UserView";
+import API_URL from "./assets/utils/config";
 
 function App() {
   const [token, setToken] = useState(null);
@@ -21,7 +22,7 @@ function App() {
   const [socket, setSocket] = useState(null);
   const [messages, setMessages] = useState([]);
 
-  const SocketIOServer = "http://localhost:3001";
+  const SocketIOServer = API_URL;
 
   useEffect(() => {
     setToken(localStorage.getItem("token"));

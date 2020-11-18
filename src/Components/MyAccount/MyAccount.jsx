@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import API_URL from "../../assets/utils/config";
 
 export default function MyAccount({ userId, token, setUserName }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -8,7 +9,7 @@ export default function MyAccount({ userId, token, setUserName }) {
 
   useEffect(() => {
     if (userId) {
-      fetch(`http://localhost:3001/users/${userId}`, {
+      fetch(`${API_URL}/users/${userId}`, {
         headers: {
           token: token,
         },
@@ -46,7 +47,7 @@ export default function MyAccount({ userId, token, setUserName }) {
   const formAccountSubmit = (e) => {
     e.preventDefault();
     e.persist();
-    fetch(`http://localhost:3001/subscribe/${userId}`, {
+    fetch(`${API_URL}/subscribe/${userId}`, {
       method: "PUT",
       headers: {
         Accept: "application/json",

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import myFunctions from "../../assets/utils/myFunctions";
+import API_URL from "../../assets/utils/config";
 
 const UserView = ({ userId, token, socket }) => {
   const history = useHistory();
@@ -36,7 +37,7 @@ const UserView = ({ userId, token, socket }) => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:3001/users/${parseInt(userId2)}`, {
+    fetch(`${API_URL}/users/${parseInt(userId2)}`, {
       headers: {
         token: token,
       },

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import User from "./MyUser";
+import API_URL from "../../assets/utils/config";
 
 export default function Users({ userId, setUserId2, token, usersOnline }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,7 +29,7 @@ export default function Users({ userId, setUserId2, token, usersOnline }) {
 
   useEffect(() => {
     if (userId) {
-      fetch(`http://localhost:3001/users/messages?userId=${userId}`, {
+      fetch(`${API_URL}/users/messages?userId=${userId}`, {
         headers: {
           token: token,
         },

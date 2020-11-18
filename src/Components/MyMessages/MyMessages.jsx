@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MyMessage from "./MyMessage";
+import API_URL from "../../assets/utils/config";
 
 export default function Messages({ userId, userId2, token }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -14,7 +15,7 @@ export default function Messages({ userId, userId2, token }) {
   const submitMessage = (e) => {
     e.preventDefault();
     // e.persist();
-    fetch("http://localhost:3001/messages", {
+    fetch(`${API_URL}/messages`, {
       method: "post",
       headers: {
         Accept: "application/json",
@@ -39,14 +40,11 @@ export default function Messages({ userId, userId2, token }) {
 
   useEffect(() => {
     if (userId) {
-      fetch(
-        `http://localhost:3001/messages/?userId=${userId}&userId2=${userId2}`,
-        {
-          headers: {
-            token: token,
-          },
-        }
-      )
+      fetch(`${API_URL}/messages/?userId=${userId}&userId2=${userId2}`, {
+        headers: {
+          token: token,
+        },
+      })
         .then((response) => {
           setIsLoading(false);
           return response.json();

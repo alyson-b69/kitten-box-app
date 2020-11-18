@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
+import API_URL from "../../assets/utils/config";
 
 export default function TabSignIn({
   activeTab,
@@ -23,7 +24,7 @@ export default function TabSignIn({
   const handleSignIn = (e) => {
     e.preventDefault();
     e.persist();
-    fetch("http://localhost:3001/login", {
+    fetch(`${API_URL}/login`, {
       method: "post",
       headers: {
         Accept: "application/json",
