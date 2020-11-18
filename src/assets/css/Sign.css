@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+main#sign-container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+div#sign {
+  width: 400px;
+  height: auto;
+  background: #9ec2ce;
+  border-radius: 5px;
+  box-shadow: 0 0 12px -3px rgba(0, 0, 0, 0.5);
+}
+
+div#sign ul {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+div#sign ul li {
+  width: 49%;
+  display: inline-block;
+  height: inherit;
+  text-align: center;
+  padding: 10px;
+}
+
+div#sign ul li a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+div#sign ul li a:hover,
+div#sign ul li a.active {
+  opacity: 1;
+}
+
+div#sign ul li a#sig-nup {
+}
+
+div#sign div.tab {
+  display: none;
+  padding: 10px;
+}
+
+div#sign div.tab.active {
+  display: block;
+}
+
+div#sign div.tab p {
+  margin-bottom: 15px;
+}
+
+div#sign div.tab p input {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  border: 0;
+}
+
+div#sign div.tab p input[type="text"] {
+}
+
+div#sign div.tab p input[type="submit"] {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 415px) {
+  div#sign {
+    width: 100%;
+    height: auto;
+    background: #61dafb;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

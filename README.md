@@ -1,3 +1,15 @@
+# MY REACT CHAT APP FRONT
+
+To run it, you need to fork and install my [react-chat-api](https://github.com/alyson-b69/react-chat-api)
+
+### Nice to have
+
+- [ ] userView : Add more data on profil page (avatar, description etc)
+- [ ] my-message : Add socket.io to real-time chat on personnal messages
+- [ ] home : Add user to my users when click on his name since chat home (for the moment, it open profilView to send the first message)
+- [ ] UserView : fix React State update
+- [ ] My-messages : Add message when no users on messages
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
