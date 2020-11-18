@@ -1,6 +1,6 @@
 # MY REACT CHAT APP FRONT
 
-To run it, you need to fork and install my [react-chat-api](https://github.com/alyson-b69/react-chat-api)
+To run it, you need to fork and install my [kitten-box-api](https://github.com/alyson-b69/kitten-box-api)
 
 ### Nice to have
 
@@ -9,6 +9,7 @@ To run it, you need to fork and install my [react-chat-api](https://github.com/a
 - [ ] home : Add user to my users when click on his name since chat home (for the moment, it open profilView to send the first message)
 - [ ] UserView : fix React State update
 - [ ] My-messages : Add message when no users on messages
+- [ ] Deploy on my VPS
 
 # Getting Started with Create React App
 
