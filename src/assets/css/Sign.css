@@ -87,6 +87,6 @@ div#sign div.tab p input[type="submit"] {
     height: auto;
     background: #9ec2ce;
     border-radius: 5px;
-    box-shadow: none;
+    box-shadow: 2px 2px 6px 0px #d4cdcd;
   }
 }
