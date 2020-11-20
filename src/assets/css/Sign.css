@@ -7,12 +7,12 @@ body {
 }
 
 main#sign-container {
+  padding-top: 5%;
   width: 100%;
   min-height: 100vh;
   position: relative;
   display: flex;
-
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -83,10 +83,10 @@ div#sign div.tab p input[type="submit"] {
 
 @media screen and (max-width: 415px) {
   div#sign {
-    width: 100%;
+    width: 95%;
     height: auto;
-    background: #61dafb;
-    border-radius: 0;
+    background: #9ec2ce;
+    border-radius: 5px;
     box-shadow: none;
   }
 }
