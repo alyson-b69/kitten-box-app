@@ -16,7 +16,7 @@ class myFunctions {
   }
 
   static postMessage(message, setWrittenMessage, token) {
-    fetch("http://localhost:3001/messages", {
+    fetch("https://kitten-box-api.wild-dev.com/messages", {
       method: "post",
       headers: {
         Accept: "application/json",

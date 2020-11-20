@@ -6,9 +6,7 @@ import API_URL from "../../assets/utils/config";
 const UserView = ({ userId, token, socket }) => {
   const history = useHistory();
   const userId2 = window.location.pathname.split("/")[2];
-  // const [userId2, setUserId2] = useState(
-  // window.location.pathname.split("/")[2];
-  // );
+
   const [isLoading, setIsLoading] = useState(true);
   const [userProfil, setUserProfil] = useState("");
   const [writtenMessage, setWrittenMessage] = useState("");

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import User from "./User";
+import API_URL from "../../assets/utils/config";
 
 export default function Users({ userId, usersOnline, token }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,7 +28,7 @@ export default function Users({ userId, usersOnline, token }) {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:3001/users/?userId=${userId}`, {
+    fetch(`${API_URL}/users/?userId=${userId}`, {
       headers: {
         token: token,
       },
