@@ -82,6 +82,9 @@ div#sign div.tab p input[type="submit"] {
   -webkit-appearance: none;
   -moz-appaerance: none;
   appearance: none;
+  background: #efefef;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 415px) {
